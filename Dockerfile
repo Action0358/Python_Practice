@@ -11,7 +11,7 @@ WORKDIR /app
 # --nameの後に任意のコンテナ名を指定できる(ターミナル上で実行)
 # docker run -d -it --name back_python -v /Users/daiyunozaki/Desktop/Python_Practice:/app -p 8000:8000 python_practice /bin/bash
 
-# コンテナ内に自分が入る（コンテナのpythonのバージョンは異なる）
+# コンテナ内に自分が入る（コンテナのpythonのバージョンは異なる、コマンド操作する前にdockerアプリを立ち上げてContainersにあるActionsのStartを押すこと）
 # docker exec -it back_python /bin/bash
 
 #ローカルに戻るコマンド
