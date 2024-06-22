@@ -14,5 +14,5 @@ x = 10
 print(type(x))
 
 #  割り勘計算プログラムの問題点(input関数で入力した値は、文字列として扱われる)
-price = input('料金を入力 >>')
+price = input('料金を入力 >>') # 引数入力
 print (type(price))

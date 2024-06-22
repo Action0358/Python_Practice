@@ -11,7 +11,7 @@ height = 175.6
 print('私の名前は{}で、年齢は{}歳で、身長は{}cmです'.format(name, age, height))
 
 #  コード1-26   割り勘計算プログラム(完成版)
-price = int(input("料金を入力 >>"))
-number = int(input('人数を入力 >>'))
+price = int(input("料金を入力 >>")) # 引数入力
+number = int(input('人数を入力 >>')) # 引数入力
 payment = int(price / number)
 print("お支払いは{}です".format(payment))

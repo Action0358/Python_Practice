@@ -10,9 +10,9 @@ print(z * 2)
 print(type(z)) # 文字列なので、「*」で3.14が2回出力される
 
 #  コード1-23 割り勘計算プログラムの修正(未完了)
-price = input('料金を入力 >>')
-price = int(price)
-number = input('人数を入力 >>')
+price = input('料金を入力 >>') # 引数入力
+price = int(price) 
+number = input('人数を入力 >>') # 引数入力
 number = int(number)
 payment = price / number
 print('お支払いは' + str(payment) + '円です') # 原則、文字列同士か数理同士
