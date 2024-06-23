@@ -5,11 +5,11 @@
 
 print("すべての質問に y または n で答えてください")
 
-okane_aruka = input("お金に余裕はありますか >>").strip().lower()
+okane_aruka = input("お金に余裕はありますか >>").strip().lower() # 引数入力
 
 if okane_aruka == "y":
-    onaka_suiteruka = input("お腹がすごく空いていますか？ >>").strip().lower()
-    nomitai_kibunka = input("ビールを飲みたいですか？ >>").strip().lower()
+    onaka_suiteruka = input("お腹がすごく空いていますか？ >>").strip().lower() # 引数入力
+    nomitai_kibunka = input("ビールを飲みたいですか？ >>").strip().lower() # 引数入力
     
     if onaka_suiteruka == "y" and nomitai_kibunka == "y":
         print("焼肉はいかがですか")
@@ -27,7 +27,7 @@ else:
     print("家で食べましょう")
 
 # 夜食の質問はお金の余裕があるかどうかに関係なく尋ねる
-yashoku_iruka = input("夜食は必要ですか？ >>").strip().lower()
+yashoku_iruka = input("夜食は必要ですか？ >>").strip().lower() # 引数入力
 
 if yashoku_iruka == "y":
     print("コンビニのチキンはいかがですか")
