@@ -18,7 +18,7 @@ scores = input_scores("浅木") # input_scores関数の戻り値をscoresに格�
 calc_average(scores) # scoresをcalc_average関数に渡す
 
 
-# scores = input_scores("浅木")は、def calc_average(scores)の（）内の引数に渡されinput_scores(name)内の処理内容が呼び出される
+# scores = input_scores("浅木")は、def calc_average(scores)の（）内の引数に渡されinput_scores関数内の処理が呼び出される
 
 # 引数と戻り値を利用する関数の定義
 # def 関数名(引数):
@@ -43,3 +43,8 @@ print(f"足し算の答えは{answer}です") # 戻り値を受け取る変数 a
     
 # plus(100, 50)
 # print(f"足し算の答えは{result}です")
+
+
+
+# 戻り値（返り値）とは、プログラム中で呼び出された関数などが処理を終了する際に、呼び出し元に対して渡す値のこと
+# returnは、処理された結果（戻り値）を何らかの形で、他の関数で利用したいという場合に使う
