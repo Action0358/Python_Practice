@@ -7,7 +7,7 @@ def input_scores(name):
     security = int(input("セキュリティの得点？ >>"))
     
     scores = [network, database, security] # ローカル変数の独立性(input_score関数内に変数scoreの処理が存在しない)
-    return scores # scoresリストを返す
+    return scores # scoresリストに入力した値を返す
     
 def calc_average(scores):
     avg = sum(scores) / len(scores)
