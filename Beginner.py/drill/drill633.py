@@ -3,7 +3,7 @@ def add_suffix(names): # namesは仮引数のため、今回before_namesが引�
     for i in range(len(names)):
         names[i] = names[i] + "さん"
     
-    return names # returnは関数内で処理された内容をbefore_namesに直接反映させている
+    return names # returnは関数内で処理された内容をbefore_namesに直接反映させている。ただし、今回は関数内の操作が直接 before_names に影響を与えているため、return の役割は特に重要ではない
 
 before_names = ["松田", "浅木", "工藤"] #　関数内の処理がbefore_namesに反映させているため、"さん"が付く
 after_names = add_suffix(before_names) 
