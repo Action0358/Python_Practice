@@ -25,7 +25,7 @@ def int_input(msg):
 
 def calc_payment(amount, people = 2):
     dnum = amount / people # 総額を人数で割る (端数も保持)
-    pay = dnum // 100 * 100 # 100円未満を切り捨てる
+    pay = dnum // 100 * 100 # 100円未満を切り捨てる # (dnum // 100) * 100
     
     if dnum > pay: # 元の値と比較して
         pay = pay + 100 # 小さければ100円未満があったので上乗せ
@@ -47,3 +47,8 @@ amount = int_input("支払総額"); people = int_input("参加人数")
 
 # 結果表示
 show_payment(pay, payorg, people)
+
+
+# 上記のコードは、「# 計算データ入力」の呼び出し関数にそれぞれ値を入力し、def int_input(msg):の定義に入力した値を引数に渡す
+# 次に、def calc_payment(amount, people = 2):の定義に引数を渡し、処理を行いreturnで「# 割り算結果」の変数[pay, payorg]に返す
+# 「# 結果表示」の呼び出し関数にある引数をdef show_payment(pay, payorg, people = 2):に渡し、print表示する
