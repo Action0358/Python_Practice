@@ -1,5 +1,6 @@
 # ベースイメージの指定
 FROM python:3
+
 USER root
 
 # 作業ディレクトリの設定
